@@ -6,16 +6,17 @@ public class PlayerSystem : MonoBehaviour
 {
     [SerializeField] private float forwardPlayerSpeed;
     [SerializeField] private float sidePlayerSpeed;
+    
 
     private Vector3 direction;
     
 
-    private CharacterController _controller;
+    private Rigidbody _rb;
     private InputSystemKeyboard _input;
     
     void Start()
     {
-        _controller = GetComponent<CharacterController>();
+        _rb = GetComponent<Rigidbody>();
         _input = GetComponent<InputSystemKeyboard>();
     }
 
@@ -30,6 +31,6 @@ public class PlayerSystem : MonoBehaviour
 
     void FixedUpdate()
     {
-        _controller.Move(direction * Time.deltaTime);
+        transform.Translate(direction * Time.deltaTime);
     }
 }

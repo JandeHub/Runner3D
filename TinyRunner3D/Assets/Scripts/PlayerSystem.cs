@@ -24,13 +24,12 @@ public class PlayerSystem : MonoBehaviour
     {
         direction.z = forwardPlayerSpeed;
         direction.x = _input.hor * sidePlayerSpeed;
-        
+
+    
+            transform.Translate(direction * Time.deltaTime, Space.World);
+     
         
     }
 
 
-    void FixedUpdate()
-    {
-        transform.Translate(direction * Time.deltaTime);
-    }
 }

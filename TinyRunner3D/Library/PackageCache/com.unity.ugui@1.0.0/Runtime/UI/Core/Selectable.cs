@@ -514,6 +514,12 @@ namespace UnityEngine.UI
                 Array.Copy(s_Selectables, temp, s_Selectables.Length);
                 s_Selectables = temp;
             }
+
+            if (EventSystem.current && EventSystem.current.currentSelectedGameObject == gameObject)
+            {
+                hasSelection = true;
+            }
+
             m_CurrentIndex = s_SelectableCount;
             s_Selectables[m_CurrentIndex] = this;
             s_SelectableCount++;
@@ -605,10 +611,10 @@ namespace UnityEngine.UI
                     return SelectionState.Disabled;
                 if (isPointerDown)
                     return SelectionState.Pressed;
-                if (isPointerInside)
-                    return SelectionState.Highlighted;
                 if (hasSelection)
                     return SelectionState.Selected;
+                if (isPointerInside)
+                    return SelectionState.Highlighted;
                 return SelectionState.Normal;
             }
         }

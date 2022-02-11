@@ -91,13 +91,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7629269319957395125}
-  - component: {fileID: 588485862877649969}
-  - component: {fileID: 962810988686859502}
+  - component: {fileID: -6320673328585067669}
   - component: {fileID: -7953794342579815613}
   - component: {fileID: 1446031027}
+  - component: {fileID: 1733754645969791491}
   m_Layer: 7
   m_Name: ButterRobot
-  m_TagString: Untagged
+  m_TagString: RobotFollowers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,7 +117,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &588485862877649969
+--- !u!114 &-6320673328585067669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,20 +126,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8116858890876277280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 411cc900ace54b849a916e5d9cb6cb33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fatherFollower: {fileID: 0}
---- !u!114 &962810988686859502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8116858890876277280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d2d692027230954aa81a84fb77bf7b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 63dc6bbf379637748b0357eb275ad010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myTarget: {fileID: 0}
@@ -154,7 +141,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.5
+  m_Speed: 20
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -175,6 +162,20 @@ CapsuleCollider:
   m_GameObject: {fileID: 8116858890876277280}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 15.398045
+  m_Height: 51.11626
+  m_Direction: 1
+  m_Center: {x: 0.13064146, y: 26.025885, z: -0.3480339}
+--- !u!136 &1733754645969791491
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116858890876277280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 15.398045
   m_Height: 51.11626

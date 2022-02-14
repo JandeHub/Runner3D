@@ -12,7 +12,7 @@ public class HealthSystem : MonoBehaviour
 
     public event Action ReduceUI = delegate { };
 
-    public Animator _anim;
+    private Animator _anim;
 
     void OnEnable()
     {
@@ -35,7 +35,7 @@ public class HealthSystem : MonoBehaviour
     {
         if(followers < 0)
         {
-            _anim.SetBool("dead", true);
+            
             died = true;
         }
 

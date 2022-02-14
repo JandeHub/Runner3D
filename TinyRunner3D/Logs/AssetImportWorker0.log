@@ -15,11 +15,11 @@ C:/Users/Alumno/Documents/GitHub/Runner3D/TinyRunner3D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53566
+53259
 Successfully changed project path to: C:/Users/Alumno/Documents/GitHub/Runner3D/TinyRunner3D
 C:/Users/Alumno/Documents/GitHub/Runner3D/TinyRunner3D
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 209.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 100.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.12f1 (afcadd793de6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,78 +35,487 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.146754 seconds.
+Registered in 0.001993 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 126.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 109.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.259 seconds
+- Completed reload, in  1.744 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5259ms)
-		BeginReloadAssembly (3223ms)
+	ReloadAssembly (1744ms)
+		BeginReloadAssembly (59ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (920ms)
-			LoadAssemblies (3220ms)
+		EndReloadAssembly (541ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (527ms)
+			SetupTypeCache (195ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (308ms)
+			SetupLoadedEditorAssemblies (261ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (126ms)
+				RefreshPlugins (110ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (116ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.847673 seconds.
+Registered in 0.005593 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.360 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1361ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1141ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (459ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (421ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3655 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 211.2 MB.
+System memory in use after: 211.4 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4106.
+Total: 5.362900 ms (FindLiveObjects: 0.549600 ms CreateObjectMapping: 0.330400 ms MarkObjects: 4.386700 ms  DeleteObjects: 0.093700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Models/DesertDeco
+  artifactKey: Guid(ac3eee565f1430d4c83b4ad5729eb2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DesertDeco using Guid(ac3eee565f1430d4c83b4ad5729eb2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568709930e53e53a6c3851c9a74a1bc1') in 0.011826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 761.866796 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Preview
+  artifactKey: Guid(d098ff07e32a72845af9837d000f6596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Preview using Guid(d098ff07e32a72845af9837d000f6596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3808628748080fb55abcbbf7cb3356d7') in 0.011433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.994410 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx
+  artifactKey: Guid(505022808a8f533408b92182bacf0399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx using Guid(505022808a8f533408b92182bacf0399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17535f1b5ac31b1725a8f938c095ce0') in 0.009525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.240565 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_001.fbx
+  artifactKey: Guid(90037a4995b83944f8d746264e150a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_001.fbx using Guid(90037a4995b83944f8d746264e150a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef220dbe865cc5cf21afe0be75a0faa3') in 0.298190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.283960 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_002.fbx
+  artifactKey: Guid(aed71187bba654d4f9199d85d070325b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_002.fbx using Guid(aed71187bba654d4f9199d85d070325b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716012cb29bdb3197a4ab9800960a010') in 0.062622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.329764 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_003.fbx
+  artifactKey: Guid(1c2e04f45ccb991459bcee1fddf2908d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_003.fbx using Guid(1c2e04f45ccb991459bcee1fddf2908d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61f0bed51b6ca8501022af164bff680') in 0.039922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.370348 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_005.fbx
+  artifactKey: Guid(0572488bb882c8a4fadf76a6a3b0315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_005.fbx using Guid(0572488bb882c8a4fadf76a6a3b0315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3cf9d20e1c2b7e49be406b30bda7a2') in 0.031124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.342763 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_002.fbx
+  artifactKey: Guid(427900f307b08d940bde510c02265a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_002.fbx using Guid(427900f307b08d940bde510c02265a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b996fd5ed77999ea3a6f32822eb9663') in 0.042013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.346577 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_005.fbx
+  artifactKey: Guid(40ca1b011b9c5304d9ffda8bbd8625f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_005.fbx using Guid(40ca1b011b9c5304d9ffda8bbd8625f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c395b368dd2f77acef91bb47313a593') in 0.031267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.335522 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_007.fbx
+  artifactKey: Guid(a244a6503627cd0469249a902926f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_007.fbx using Guid(a244a6503627cd0469249a902926f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b39134d94101e3a9e67016a7e333015') in 0.026212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.904465 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_008.fbx
+  artifactKey: Guid(f46c38925a8819549b9c724249b61822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_008.fbx using Guid(f46c38925a8819549b9c724249b61822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8ae20a8ea4085157c615231febf8ea') in 0.056750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.404697 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_009.fbx
+  artifactKey: Guid(38ed12afd0a6656458ab7052c7221c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_009.fbx using Guid(38ed12afd0a6656458ab7052c7221c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9233fa43bc639cb68041c648dff2416d') in 0.151166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.521208 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_010.fbx
+  artifactKey: Guid(faea4e236f5df1449951313b91f8b9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_010.fbx using Guid(faea4e236f5df1449951313b91f8b9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39275fc9a2428dc0996ea8eb469266fe') in 0.038278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.477095 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_001.fbx
+  artifactKey: Guid(a4bbe8835bb8f434296fd9863db4cc99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_001.fbx using Guid(a4bbe8835bb8f434296fd9863db4cc99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa88e80923fc864e8a4ccb90aed082f5') in 0.036771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.501351 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_002.fbx
+  artifactKey: Guid(3f3e9d36c9101af40942b755df7093dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_002.fbx using Guid(3f3e9d36c9101af40942b755df7093dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2acd4ad3b1630821542e8ca567b66218') in 0.028673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.496736 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_003.fbx
+  artifactKey: Guid(4bc6fc4616abf6945acad4adbd0584d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_003.fbx using Guid(4bc6fc4616abf6945acad4adbd0584d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9e262278943ba4a05dec6a118af535') in 0.026180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.552583 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_004.fbx
+  artifactKey: Guid(5e94741c02021184984f55b598c3041e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_004.fbx using Guid(5e94741c02021184984f55b598c3041e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9508b6d6490c5ae79ded38df321000a0') in 0.029467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.556462 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_005.fbx
+  artifactKey: Guid(c5f1b02fd63a1194f8aa10bd445f114c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Plateau_desert_005.fbx using Guid(c5f1b02fd63a1194f8aa10bd445f114c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f203cf537b51e4bef1338a2ac837dc') in 0.028694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.556312 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_004.fbx
+  artifactKey: Guid(7dc3e95d4475a0544a7f27fc8a208735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Hill_desert_004.fbx using Guid(7dc3e95d4475a0544a7f27fc8a208735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289dafb33b693d7e35c3f20389bdf634') in 0.048597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.040381 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_001.fbx
+  artifactKey: Guid(277b73c1e5e041f4789a9a09aa0abe9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_001.fbx using Guid(277b73c1e5e041f4789a9a09aa0abe9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d209ce53d23ea3a36a4e0ce3947993a') in 0.028251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.606872 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_003.fbx
+  artifactKey: Guid(3ac4c758af6cc854b9780abec9cdbd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_003.fbx using Guid(3ac4c758af6cc854b9780abec9cdbd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4299ba16f61c4fbb65750887b33dfe30') in 0.045925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.525716 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_004.fbx
+  artifactKey: Guid(e715162d94a08fc42ae4b9cb09ec5af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models/Fbx/Mountain_desert_004.fbx using Guid(e715162d94a08fc42ae4b9cb09ec5af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ac8765ede683fba0ea17a4c65d62f9') in 0.040064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 286.093937 seconds.
+  path: Assets/Models/free-desert-mountain-3d-low-poly-models
+  artifactKey: Guid(e5ce2f9501fd55345b62a13ca524a28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-desert-mountain-3d-low-poly-models using Guid(e5ce2f9501fd55345b62a13ca524a28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774db5991b6f5331daf4c8ae13d134d3') in 0.012894 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005623 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.688 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1688ms)
+		BeginReloadAssembly (363ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (111ms)
+		EndReloadAssembly (1190ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (410ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (489ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (401ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3600 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.7 MB.
+System memory in use after: 210.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4152.
+Total: 2.819400 ms (FindLiveObjects: 0.318400 ms CreateObjectMapping: 0.207500 ms MarkObjects: 2.266900 ms  DeleteObjects: 0.025200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 639.455020 seconds.
+  path: Assets/Scripts/SceneCollision.cs
+  artifactKey: Guid(c1a259bc198b38f41aab3e4065b190b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SceneCollision.cs using Guid(c1a259bc198b38f41aab3e4065b190b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2107db02f5664f2d1aa6c0370f9eecee') in 0.014731 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025624 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
 Mono: successfully reloaded assembly
-- Completed reload, in  4.258 seconds
+- Completed reload, in  1.406 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4259ms)
-		BeginReloadAssembly (187ms)
+	ReloadAssembly (1406ms)
+		BeginReloadAssembly (143ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (4006ms)
-			LoadAssemblies (2203ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1195ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (994ms)
+			SetupTypeCache (438ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (638ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (480ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (511ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (393ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3600 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.7 MB.
+System memory in use after: 211.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4154.
+Total: 3.190900 ms (FindLiveObjects: 0.324100 ms CreateObjectMapping: 0.205700 ms MarkObjects: 2.607200 ms  DeleteObjects: 0.052900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005708 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1229ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1025ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (399ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (362ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (272ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3600 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.8 MB.
+System memory in use after: 211.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4156.
+Total: 3.853100 ms (FindLiveObjects: 0.819300 ms CreateObjectMapping: 0.315600 ms MarkObjects: 2.694500 ms  DeleteObjects: 0.022400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 89.418065 seconds.
+  path: Assets/Scripts/Follower/FollowersCollsion.cs
+  artifactKey: Guid(411cc900ace54b849a916e5d9cb6cb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Follower/FollowersCollsion.cs using Guid(411cc900ace54b849a916e5d9cb6cb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72099b0553b9b42c23be2bc66a12e74') in 0.013344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.733820 seconds.
+  path: Assets/Scripts/PoolingManager.cs
+  artifactKey: Guid(e787f109f2ceb9740aeddf7186651ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PoolingManager.cs using Guid(e787f109f2ceb9740aeddf7186651ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58e56660baf517f68275531898aa27e') in 0.007383 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006414 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Alumno\Documents\GitHub\Runner3D\TinyRunner3D\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.124 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1124ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (931ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (335ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (249ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3600 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.8 MB.
+System memory in use after: 211.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4158.
+Total: 3.137900 ms (FindLiveObjects: 0.311700 ms CreateObjectMapping: 0.231900 ms MarkObjects: 2.571700 ms  DeleteObjects: 0.021100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

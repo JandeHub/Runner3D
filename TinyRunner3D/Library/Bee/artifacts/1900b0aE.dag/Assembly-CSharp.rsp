@@ -332,6 +332,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Beam/BeamMovement.cs"
 "Assets/Scripts/Beam/BeamSystem.cs"
+"Assets/Scripts/Camera/CameraShake.cs"
+"Assets/Scripts/Camera/CameraSystem.cs"
 "Assets/Scripts/Follower/CreateFollowers.cs"
 "Assets/Scripts/Follower/FatherFollower.cs"
 "Assets/Scripts/Follower/FollowersCollsion.cs"
@@ -342,6 +344,7 @@
 "Assets/Scripts/HealthSystem.cs"
 "Assets/Scripts/PoolingManager.cs"
 "Assets/Scripts/RoadBounds.cs"
+"Assets/Scripts/Robot/MiniPlayer.cs"
 "Assets/Scripts/Robot/PlayerMovement.cs"
 "Assets/Scripts/SceneCollision.cs"
 -langversion:8.0

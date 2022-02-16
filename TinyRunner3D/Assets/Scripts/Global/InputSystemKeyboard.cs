@@ -13,6 +13,7 @@ public class InputSystemKeyboard : MonoBehaviour
     //Evento creado, se utiliza "delegate" para decir que esa linea de codigo es un evento
     public event Action AddFollower = delegate { }; //OnFire puede ser cualquier nombre
     public event Action RemoveFollower = delegate { };
+    public event Action ConvertMini = delegate { };
 
   
     void Update()
@@ -20,11 +21,18 @@ public class InputSystemKeyboard : MonoBehaviour
         hor = Input.GetAxis("Horizontal");
         ver = Input.GetAxis("Vertical");
 
+        if (Input.GetKey(KeyCode.Space))
+            ConvertMini();
+
         if (Input.GetKeyDown(KeyCode.O))
             AddFollower();
 
         if (Input.GetKeyDown(KeyCode.P))
             RemoveFollower();
+
+        
+
+
 
     }
 }

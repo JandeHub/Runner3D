@@ -30,8 +30,10 @@ public class PlayerMovement: MonoBehaviour
 
             transform.Translate(direction * Time.deltaTime, Space.World);
         }
-     
-        
+
+       
+
+
     }
 
 

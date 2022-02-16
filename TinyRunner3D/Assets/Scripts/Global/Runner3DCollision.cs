@@ -8,4 +8,9 @@ public abstract class Runner3DCollision : MonoBehaviour
     {
         
     }
+
+    protected virtual void OnCollisionEnter(Collision collision)
+    {
+
+    }
 }

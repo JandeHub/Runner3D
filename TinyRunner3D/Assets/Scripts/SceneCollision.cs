@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class SceneCollision : Runner3DCollision
 {
-    protected override void OnTriggerEnter(Collider collision)
+    private CameraShake _camera;
+
+    private void Awake()
     {
-        HealthSystem.died = true;
+        _camera = GetComponent<CameraShake>();
+    }
+
+    protected override void OnCollisionEnter(Collision collision)
+    {
+        GameObject.Find("Main Camera").GetComponent<CameraShake>().Shake(0.5f, 4f);
+        HealthSystem.died = true; 
+        
     }
 }
 

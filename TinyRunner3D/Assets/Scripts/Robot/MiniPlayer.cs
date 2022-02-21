@@ -19,6 +19,8 @@ public class MiniPlayer : MonoBehaviour
     void Start()
     {
         originalScale = transform.localScale;
+
+       
     }
 
     private void Update()
@@ -26,7 +28,7 @@ public class MiniPlayer : MonoBehaviour
         if (mini)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(originalScale.x * 0.5f, originalScale.y * 0.5f, originalScale.z * 0.5f)
-                , Time.deltaTime * 7);
+                ,Time.deltaTime * 7);
         }
         else
         {

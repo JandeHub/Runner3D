@@ -6,6 +6,7 @@ public class PlayerMovement: MonoBehaviour
 {
     [SerializeField] private float forwardPlayerSpeed;
     [SerializeField] private float sidePlayerSpeed;
+    private float forwardSpeed;
     
 
     private Vector3 direction;
@@ -18,6 +19,8 @@ public class PlayerMovement: MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _input = GetComponent<InputSystemKeyboard>();
+
+        forwardSpeed = forwardPlayerSpeed;
     }
 
     void Update()
@@ -27,7 +30,7 @@ public class PlayerMovement: MonoBehaviour
             direction.z = forwardPlayerSpeed;
             direction.x = _input.hor * sidePlayerSpeed;
 
-
+           
             transform.Translate(direction * Time.deltaTime, Space.World);
         }
 

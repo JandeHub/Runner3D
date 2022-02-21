@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowersCollsion.cs" />
     <Compile Include="Assets\Scripts\Follower\CreateFollowers.cs" />
     <Compile Include="Assets\Scripts\Follower\FatherFollower.cs" />
@@ -61,15 +62,18 @@
     <Compile Include="Assets\Scripts\RoadBounds.cs" />
     <Compile Include="Assets\Scripts\SceneCollision.cs" />
     <Compile Include="Assets\Scripts\Global\InputSystemKeyboard.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraSystem.cs" />
     <Compile Include="Assets\Scripts\Beam\BeamMovement.cs" />
     <Compile Include="Assets\Scripts\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\Global\Runner3DCollision.cs" />
     <Compile Include="Assets\Scripts\Follower\NavMeshRobot.cs" />
     <Compile Include="Assets\Scripts\Robot\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Beam\BeamSystem.cs" />
     <Compile Include="Assets\Scripts\Robot\MiniPlayer.cs" />
-    <Compile Include="Assets\Scripts\Camera\CameraSystem.cs" />
-    <Compile Include="Assets\Scripts\Camera\CameraShake.cs" />
+    <Compile Include="Assets\Scripts\Beam\BeamSystem.cs" />
+    <Compile Include="Assets\Scripts\BombSpike\BombExplosion.cs" />
+    <Compile Include="Assets\Scripts\BombSpike\BombCollider.cs" />
+    <Compile Include="Assets\Scripts\BombSpike\BombSystem.cs" />
+    <Compile Include="Assets\Scripts\SawCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\free-desert-mountain-3d-low-poly-models\License.txt" />

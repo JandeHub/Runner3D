@@ -3,51 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraShake : MonoBehaviour
-{
-	public static CameraShake _instance;
-    [SerializeField] private Transform cameraTransform;
-	
-	public static bool shake;
-
-	private float duration;
-	private float amount;
-	private float decreaseFactor = 1.0f;
+{ 
 	private Vector3 originalPos;
 
 
-	void Awake()
-	{
-		_instance = this;
+	public IEnumerator Shake(float durationShake, float amountShake)
+    {
+		Debug.Log("Shaked");
+		originalPos = transform.localPosition;
 
-	}
+		float time = 0.0f;
 
-	void Start()
-	{
-		originalPos = cameraTransform.position;
-	}
+		while(time < durationShake)
+        {
+			float x = Random.Range(-1, 1f) * amountShake;
+			float y = Random.Range(-1, 1f) * amountShake;
+			float z = Random.Range(-1, 1f) * amountShake;
 
-	void Update()
-	{
-		
-			if(duration > 0)
-			{
+			transform.localPosition = new Vector3(x, y, z);
 
-				cameraTransform.position = originalPos + Random.insideUnitSphere * amount;
-				duration -= Time.deltaTime * decreaseFactor;
-			}
-            else
-            {
-				cameraTransform.position = originalPos;
-				shake = false;
-            }
-			
-		
-	}
-	public void Shake(float durationShake, float amountShake)
-	{
-		shake = true;
-		duration = durationShake;
-		amount = amountShake;
-	}
+			time += Time.deltaTime;
 
+			yield return null;
+
+        }
+
+		transform.localPosition = originalPos;
+    }
+	
 }

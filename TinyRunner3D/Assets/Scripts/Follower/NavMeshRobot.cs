@@ -21,7 +21,7 @@ public class NavMeshRobot : MonoBehaviour
     {
         if (myTarget != null)
         {
-            myAgent.destination = myTarget.transform.position / 2;
+            myAgent.destination = myTarget.transform.position;
         }
     }
 }

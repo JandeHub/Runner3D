@@ -345,6 +345,7 @@
 "Assets/Scripts/Global/InputSystemKeyboard.cs"
 "Assets/Scripts/Global/Runner3DCollision.cs"
 "Assets/Scripts/HealthSystem.cs"
+"Assets/Scripts/InfinitScene.cs"
 "Assets/Scripts/PoolingManager.cs"
 "Assets/Scripts/RoadBounds.cs"
 "Assets/Scripts/Robot/MiniPlayer.cs"

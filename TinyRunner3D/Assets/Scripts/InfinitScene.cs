@@ -19,9 +19,9 @@ public class InfinitScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        offset -= -speed * Time.deltaTime;
+        offset += speed * Time.deltaTime;
 
-        if (offset < -segmentLength) { offset += segmentLength; }
+        if (offset > -segmentLength) { offset -= segmentLength; }
 
         transform.position = basePosition + offset * Vector3.forward;
     }

@@ -24,4 +24,5 @@ public class NavMeshRobot : MonoBehaviour
             myAgent.destination = myTarget.transform.position;
         }
     }
+
 }

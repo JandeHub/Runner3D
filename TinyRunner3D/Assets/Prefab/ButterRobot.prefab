@@ -92,9 +92,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7629269319957395125}
   - component: {fileID: -6320673328585067669}
+  - component: {fileID: 5422389829015525299}
   - component: {fileID: -7953794342579815613}
   - component: {fileID: 1446031027}
-  - component: {fileID: 1733754645969791491}
   m_Layer: 7
   m_Name: ButterRobot
   m_TagString: RobotFollowers
@@ -131,6 +131,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTarget: {fileID: 0}
   myAgent: {fileID: -7953794342579815613}
+--- !u!114 &5422389829015525299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116858890876277280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411cc900ace54b849a916e5d9cb6cb33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!195 &-7953794342579815613
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -154,20 +166,6 @@ NavMeshAgent:
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!136 &1446031027
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8116858890876277280}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 15.398045
-  m_Height: 51.11626
-  m_Direction: 1
-  m_Center: {x: 0.13064146, y: 26.025885, z: -0.3480339}
---- !u!136 &1733754645969791491
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -8,6 +8,7 @@ public class CreateFollowers : MonoBehaviour
     public Transform fatherPosition;
 
     private PooledItems pooling;
+
     void OnEnable()
     {
         GetComponent<FollowersCollsion>().CreateRobot += FollowsRobot;

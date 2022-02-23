@@ -13,14 +13,15 @@ public class InputSystemKeyboard : MonoBehaviour
     public event Action AddFollower = delegate { }; 
     public event Action RemoveFollower = delegate { };
     public event Action ConvertMini = delegate { };
+    public event Action OnPause = delegate { };
 
-  
+
     void Update()
     {
         hor = Input.GetAxis("Horizontal");
         ver = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
             ConvertMini();
 
         if (Input.GetKeyDown(KeyCode.O))
@@ -29,7 +30,11 @@ public class InputSystemKeyboard : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
             RemoveFollower();
 
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+            OnPause();
+
+
+
 
 
 

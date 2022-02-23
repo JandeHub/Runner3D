@@ -60,7 +60,6 @@
     <Compile Include="Assets\Scripts\Follower\CreateFollowers.cs" />
     <Compile Include="Assets\Scripts\Follower\FatherFollower.cs" />
     <Compile Include="Assets\Scripts\Global\GodMode.cs" />
-    <Compile Include="Assets\Scripts\RoadBounds.cs" />
     <Compile Include="Assets\Scripts\SceneCollision.cs" />
     <Compile Include="Assets\Scripts\Global\InputSystemKeyboard.cs" />
     <Compile Include="Assets\Scripts\BombSpike\BombExplosion.cs" />
@@ -73,12 +72,15 @@
     <Compile Include="Assets\Scripts\Follower\NavMeshRobot.cs" />
     <Compile Include="Assets\Scripts\Robot\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Robot\MiniPlayer.cs" />
-    <Compile Include="Assets\Scripts\Beam\BeamSystem.cs" />
     <Compile Include="Assets\Scripts\InfinitScene.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Models\free-desert-mountain-3d-low-poly-models\License.txt" />
-    <None Include="Assets\Models\free-desert-mountain-3d-low-poly-models\readme.txt" />
+    <Compile Include="Assets\Scripts\Beam\BeamSystem.cs" />
+    <Compile Include="Assets\Scripts\Global\GameDecoration.cs" />
+    <Compile Include="Assets\Scripts\DataManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\CanvasUIScripts.cs" />
+    <Compile Include="Assets\Scripts\LoadSeceneManager.cs" />
+    <Compile Include="Assets\Scripts\SoundsSystemData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

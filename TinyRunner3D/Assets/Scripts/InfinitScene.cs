@@ -4,25 +4,54 @@ using UnityEngine;
 
 public class InfinitScene : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float segmentLength;
+    [SerializeField] private GameObject[] scenePrefabs;
+    [SerializeField] private float zSpawn = 0;
+    [SerializeField] private float prefabLength;
+    [SerializeField] private int numberTiles;
+    [SerializeField] private Transform playerTransform;
 
-    private Vector3 basePosition;
+    private float xPosLeft = -0.5f;
+    private float xPosRight = 0.5f;
 
-    float offset;
+    private List<GameObject> activePrefabs = new List<GameObject>();
+    
     void Start()
     {
-        basePosition = transform.position;
-        offset = 0;
+        for(int i = 0; i < numberTiles; i++)
+        {
+            if(i == 0)
+            {
+                SpawnPrefab(0);
+            }
+            else
+            {
+                SpawnPrefab(Random.Range(0, scenePrefabs.Length));
+            }
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        offset += speed * Time.deltaTime;
+        if (playerTransform.position.z - 150 > zSpawn - (numberTiles * prefabLength))
+        {
+            SpawnPrefab(Random.Range(0, scenePrefabs.Length));
+            DeletePrefab();
+        }
+    }
 
-        if (offset > -segmentLength) { offset -= segmentLength; }
+    public void SpawnPrefab(int prefabIndex)
+    {
+        GameObject go = Instantiate(scenePrefabs[prefabIndex], new Vector3(xPosLeft, 0, zSpawn), transform.rotation);
+        GameObject go2 = Instantiate(scenePrefabs[prefabIndex], new Vector3(xPosRight, 0, zSpawn), new Quaternion(0, 180, 0, 0));
+        activePrefabs.Add(go);
+        activePrefabs.Add(go2);
+        zSpawn += prefabLength;
+    }
 
-        transform.position = basePosition + offset * Vector3.forward;
+    private void DeletePrefab()
+    {
+        Destroy(activePrefabs[0]);
+        activePrefabs.RemoveAt(0);
     }
 }

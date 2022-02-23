@@ -43,7 +43,7 @@ public class MiniPlayer : MonoBehaviour
         }
         if(!canMini)
         {
-            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 100);
+            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 500);
             miniTimer = miniTimerMax;
             mini = false;
             canMini = true;

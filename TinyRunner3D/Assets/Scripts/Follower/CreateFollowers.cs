@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class CreateFollowers : MonoBehaviour
 {
     public Transform fatherPosition;
+    public GameObject myTarget;
+    public UnityEngine.AI.NavMeshAgent myAgent;
 
     private PooledItems pooling;
 
@@ -20,14 +23,19 @@ public class CreateFollowers : MonoBehaviour
 
     void FollowsRobot()
     {
-        GameObject butterRobot = PoolingManager.Instance.GetPooledObject("ButterRobot");
+        /*GameObject butterRobot = PoolingManager.Instance.GetPooledObject("ButterRobot");
         if(butterRobot != null)
         {
             butterRobot.transform.position = fatherPosition.position;
             butterRobot.SetActive(true); 
 
+        }*/
+
+        if (myTarget != null)
+        {
+            myAgent.destination = myTarget.transform.position;
         }
-        
-       
+
+
     }
 }

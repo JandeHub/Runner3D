@@ -9,6 +9,7 @@ TagManager:
   - RobotFollowers
   - enemy
   - UI
+  - FinishLevel
   layers:
   - Default
   - TransparentFX

@@ -7,8 +7,20 @@ public class NavMeshRobot : MonoBehaviour
     public GameObject myTarget;
     public NavMeshAgent myAgent;
 
+    //private bool followingPlayer;
+
+    /*void OnEnable()
+    {
+        GetComponent<FollowersCollsion>().CreateRobot += FollowsRobot;
+    }
+    void OnDisable()
+    {
+        GetComponent<FollowersCollsion>().CreateRobot -= FollowsRobot;
+    }*/
+
     void Start()
     {
+        //followingPlayer = false;
         if (myTarget == null)
         {
             myTarget = GameObject.FindGameObjectWithTag("Robot");
@@ -16,12 +28,21 @@ public class NavMeshRobot : MonoBehaviour
         
     }
 
+    /*void FollowsRobot()
+    {
+
+        followingPlayer = true;
+    }*/
+
 
     void Update()
     {
-        if (myTarget != null)
+        if (CreateFollowers.followingPlayer)
         {
-            myAgent.destination = myTarget.transform.position;
+            if (myTarget != null)
+            {
+                myAgent.destination = myTarget.transform.position;
+            }
         }
     }
 

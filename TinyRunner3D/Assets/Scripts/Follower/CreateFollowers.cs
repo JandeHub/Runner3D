@@ -7,11 +7,10 @@ using UnityEngine.AI;
 
 public class CreateFollowers : MonoBehaviour
 {
+    public static bool followingPlayer = false;
     public Transform fatherPosition;
-    public GameObject myTarget;
-    public NavMeshAgent myAgent;
 
-    public bool followingPlayer = false;
+
     private PooledItems pooling;
 
     void OnEnable()
@@ -25,27 +24,15 @@ public class CreateFollowers : MonoBehaviour
 
     void FollowsRobot()
     {
-
         followingPlayer = true;
-        /*GameObject butterRobot = PoolingManager.Instance.GetPooledObject("ButterRobot");
+        GameObject butterRobot = PoolingManager.Instance.GetPooledObject("ButterRobot");
         if(butterRobot != null)
         {
             butterRobot.transform.position = fatherPosition.position;
             butterRobot.SetActive(true); 
 
-        }*/
+        }
 
-        
     }
-    private void Update()
-    {
-      
-            if (myTarget != null)
-            {
-                
-                //Debug.Log("Siguiendo Player");
-                myAgent.SetDestination(myTarget.transform.position);
-            }
-        
-    }
+    
 }

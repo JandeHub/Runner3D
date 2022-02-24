@@ -14,6 +14,6 @@ public class FatherFollower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //gameObject.transform.position = Robot.position * Time.deltaTime;
+        gameObject.transform.position = Robot.position / 0.5f ;
     }
 }

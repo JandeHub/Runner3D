@@ -14,7 +14,7 @@ using System;
     }
 public class PoolingManager : MonoBehaviour
 {
-    [SerializeField] private Transform fatherFollower;
+    [SerializeField] private Transform followers;
     private static PoolingManager _instance;
     public static PoolingManager Instance
     {
@@ -47,7 +47,7 @@ public class PoolingManager : MonoBehaviour
                 tmp = Instantiate(l.objectToPool);
                 tmp.SetActive(false);
                 _items[l.Name].Add(tmp);
-                tmp.transform.parent = fatherFollower.transform;
+                tmp.transform.parent = followers.transform;
             }
         }
     }

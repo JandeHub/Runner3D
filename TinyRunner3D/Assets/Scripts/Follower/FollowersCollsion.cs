@@ -10,12 +10,12 @@ public class FollowersCollsion : Runner3DCollision
 
     protected override void OnTriggerEnter(Collider collision)
     {
-        //var fatherPosition = fatherFollower.transform.position;
-        //gameObject.transform.parent = fatherFollower.transform;
-        //gameObject.transform.position = new Vector3(fatherPosition.x, fatherPosition.y, -fatherPosition.z * -1.1f);
-        CreateRobot();
-        //Destroy(gameObject);
-        HealthSystem.followers++;
+        if (collision.CompareTag("Robot"))
+        {
+            CreateRobot();
+            Destroy(gameObject);
+            HealthSystem.followers++;
+        }
         
     }
 }

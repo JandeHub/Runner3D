@@ -27,6 +27,7 @@ public class GameDecoration : MonoBehaviour
     {
         public int offsetX;
         public int offsetY;
+        public Quaternion rotation;
         public LaneBuildMethod buildMethod;
         public int[] segmentList;
     };
@@ -48,6 +49,7 @@ public class GameDecoration : MonoBehaviour
     public float speed = 100.0f;
     public int segmentsAhead = 3;
     public int segmentsBehind = 3;
+
 
     Lane[] lanes;
     float offset;
@@ -151,7 +153,7 @@ public class GameDecoration : MonoBehaviour
 
                 //if(segmentMaterial.SetPass(0))
                 //{
-                Graphics.DrawMesh(segmentMesh, segmentPosition, Quaternion.Euler(90, 0, 90), segmentMaterial, gameObject.layer);
+                Graphics.DrawMesh(segmentMesh, segmentPosition, laneConfigurations[i].rotation.normalized, segmentMaterial, gameObject.layer);
                 //}
 
             }

@@ -8,7 +8,7 @@ public class FollowersCollsion : Runner3DCollision
 
     public event Action CreateRobot = delegate { };
 
-    protected override void OnCollisionEnter(Collision collision)
+    protected override void OnTriggerEnter(Collider collision)
     {
         //var fatherPosition = fatherFollower.transform.position;
         //gameObject.transform.parent = fatherFollower.transform;

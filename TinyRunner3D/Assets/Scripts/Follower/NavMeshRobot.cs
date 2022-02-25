@@ -31,6 +31,7 @@ public class NavMeshRobot : MonoBehaviour
     {
 
         followingPlayer = true;
+        FindObjectOfType<AudioManager>().Play("PickUpButter");
     }
 
 

@@ -7,7 +7,7 @@ public class SawCollision : Runner3DCollision
    protected override void OnTriggerEnter(Collider collision)
     {
 
-        Debug.Log("PlayerHitted");
+        HealthSystem.died = true;
 
     }
 }

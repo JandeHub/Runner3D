@@ -24,7 +24,7 @@ public class BombExplosion : MonoBehaviour
         
         foreach(Collider nearbyObject in collision)
         {
-            Debug.Log("PlayerHitted");
+            HealthSystem.died = true;
         }
 
         Destroy(gameObject);

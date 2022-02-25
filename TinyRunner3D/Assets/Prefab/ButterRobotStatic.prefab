@@ -47,9 +47,9 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4969,7 +4969,7 @@ NavMeshAgent:
   m_Acceleration: 30
   avoidancePriority: 50
   m_AngularSpeed: 200
-  m_StoppingDistance: 7
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -5003,3 +5003,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTarget: {fileID: 0}
   myAgent: {fileID: -7953794342579815613}
+  dust: {fileID: 2053617889}

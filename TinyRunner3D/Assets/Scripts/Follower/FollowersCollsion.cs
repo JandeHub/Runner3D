@@ -13,6 +13,7 @@ public class FollowersCollsion : Runner3DCollision
         if (collision.CompareTag("Robot"))
         {
             FollowRobot();
+
             HealthSystem.followers++;
         }
         

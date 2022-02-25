@@ -30,7 +30,6 @@ public class BeamSystem : MonoBehaviour
                if (hit.collider.CompareTag("RobotFollowers"))
                {
                     ReduceFollower();
-                        
                }
 
 

@@ -65,7 +65,7 @@ public class CanvasUIScripts : MonoBehaviour
 
 
     //GameOverMenu
-    void GameOver()
+    public void GameOver()
     {
         if(!HealthSystem.died)
         {

@@ -15,10 +15,6 @@ public class CanvasUIScripts : MonoBehaviour
     [SerializeField]
     private GameObject OptionsMenuUI;
 
-
-    private HealthSystem _health;
-
-
     void OnEnable()
     {
         
@@ -28,17 +24,14 @@ public class CanvasUIScripts : MonoBehaviour
 
     void OnDisable()
     {
-       
+   
         GameObject.FindWithTag("UI").GetComponent<InputSystemKeyboard>().OnPause += GamePaused;
 
     }
 
     void Start()
     {
-   
-        _health = GetComponent<HealthSystem>();
         GameIsPaused = false;
-
     }
 
     //PauseMenu
@@ -48,7 +41,7 @@ public class CanvasUIScripts : MonoBehaviour
         {
             ResumeGame();
         }
-        else if(!GameIsPaused)
+        else
         {
             PauseGame();
         }
@@ -74,7 +67,10 @@ public class CanvasUIScripts : MonoBehaviour
     //GameOverMenu
     void GameOver()
     {
-        gameOver.SetActive(true);
+        if(!HealthSystem.died)
+        {
+            gameOver.SetActive(true);
+        }
         
 
     }

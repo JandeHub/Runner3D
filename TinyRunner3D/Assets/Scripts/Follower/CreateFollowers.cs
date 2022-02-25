@@ -13,15 +13,6 @@ public class CreateFollowers : MonoBehaviour
 
     private PooledItems pooling;
 
-    void OnEnable()
-    {
-        GetComponent<FollowersCollsion>().CreateRobot += FollowsRobot;
-    }
-    void OnDisable()
-    {
-        GetComponent<FollowersCollsion>().CreateRobot -= FollowsRobot;
-    }
-
     void FollowsRobot()
     {
         followingPlayer = true;

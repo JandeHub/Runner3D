@@ -40,8 +40,8 @@ public class AudioManager : MonoBehaviour
     {
         
 
-        musicSlider.minValue = -80f;
-        musicSlider.maxValue = 10f;
+        musicSlider.minValue = -60f;
+        musicSlider.maxValue = 20f;
 
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 10f);
 

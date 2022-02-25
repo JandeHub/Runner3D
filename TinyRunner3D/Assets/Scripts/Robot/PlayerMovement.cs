@@ -6,8 +6,9 @@ public class PlayerMovement: MonoBehaviour
 {
     [SerializeField] private float forwardPlayerSpeed;
     [SerializeField] private float sidePlayerSpeed;
+    
 
-
+   
     private float turnSpeed = 60f;
     private Vector3 direction;
     
@@ -31,7 +32,16 @@ public class PlayerMovement: MonoBehaviour
 
             transform.Translate(direction * Time.deltaTime, Space.World);
 
-            transform.Rotate(0, 0, -turnSpeed * Time.deltaTime * _input.hor);
+            
+            if(_input.hor > 0 && transform.eulerAngles.z > -35)
+            {
+                transform.Rotate(0, 0, -turnSpeed * Time.deltaTime );
+            }
+            else if(_input.hor < 0 && transform.eulerAngles.z < 35)
+            {
+                transform.Rotate(0, 0, turnSpeed * Time.deltaTime );
+            }
+           
         }
 
        

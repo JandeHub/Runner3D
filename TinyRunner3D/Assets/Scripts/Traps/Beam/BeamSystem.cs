@@ -10,16 +10,10 @@ public class BeamSystem : MonoBehaviour
 
     public event Action ReduceFollower = delegate { };
 
-    private void Awake()
+    void Awake()
     {
         _line = GetComponent<LineRenderer>();
     }
-    void Start()
-    {
-
-
-    }
-
 
     void Update()
     {
@@ -35,7 +29,7 @@ public class BeamSystem : MonoBehaviour
 
                if (hit.collider.CompareTag("RobotFollowers"))
                {
-                        Debug.Log("Hitted");
+                    ReduceFollower();
                         
                }
 

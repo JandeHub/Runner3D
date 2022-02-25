@@ -4,23 +4,22 @@ using UnityEngine;
 using UnityEngine.AI;
 public class NavMeshRobot : MonoBehaviour
 {
-    public GameObject myTarget;
-    public NavMeshAgent myAgent;
+    private bool followingPlayer = false;
+    [SerializeField]private GameObject myTarget;
+    [SerializeField]private NavMeshAgent myAgent;
+    [SerializeField]private ParticleSystem dust;
 
-    //private bool followingPlayer;
-
-    /*void OnEnable()
+    void OnEnable()
     {
-        GetComponent<FollowersCollsion>().CreateRobot += FollowsRobot;
+        GetComponent<FollowersCollsion>().FollowRobot += FollowsRobot;
     }
     void OnDisable()
     {
-        GetComponent<FollowersCollsion>().CreateRobot -= FollowsRobot;
-    }*/
+        GetComponent<FollowersCollsion>().FollowRobot -= FollowsRobot;
+    }
 
     void Start()
     {
-        //followingPlayer = false;
         if (myTarget == null)
         {
             myTarget = GameObject.FindGameObjectWithTag("Robot");
@@ -28,20 +27,21 @@ public class NavMeshRobot : MonoBehaviour
         
     }
 
-    /*void FollowsRobot()
+    void FollowsRobot()
     {
 
         followingPlayer = true;
-    }*/
+    }
 
 
     void Update()
     {
-        if (CreateFollowers.followingPlayer)
+        if (followingPlayer)
         {
             if (myTarget != null)
             {
                 myAgent.destination = myTarget.transform.position;
+                dust.Play();
             }
         }
     }
